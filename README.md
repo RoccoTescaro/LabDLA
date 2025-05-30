@@ -17,8 +17,8 @@
 ### 1. Clone 
 
 ```bash
-git clone <your-repository-url>
-cd <repository-directory-name>
+git clone https://github.com/RoccoTescaro/LabDLA.git
+cd LabDLA
 ```
 
 ### 2. Create Your Lab Environment (Recommended)
@@ -80,6 +80,8 @@ pip install transformers datasets evaluate peft accelerate bitsandbytes
     *   **Lab 1:** Expect dataset downloads, model training visuals, and plots.
     *   **Lab 2:** RL agents will interact with environments; `pygame` might render visuals.
     *   **Lab 3:** Hugging Face models/datasets will download; `Trainer` API manages fine-tuning.
+
+> **NOTE**: some labs might have some lines commented and for example `pipeline.load()` uncommented. Since `pipeline.load` requires you to have at least a checkpoint on you machine, if you haven't trained the model at least once with the checkpoint directory parameter specified, you should comment `pipeline.load()` and uncomment `pipeline.train()`. Also all the labs have a cell which define a clear function on top of the notebook, thats mostly an utility to clean the memory occupied by checkpoints, data and logs. If you want to clear the garbage from previous results you can run it.
 
 ## 📊 Visualize Your Progress with TensorBoard
 
