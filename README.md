@@ -38,19 +38,16 @@ source venv_dla/bin/activate  # Linux/macOS
 # .\venv_dla\Scripts\activate    # Windows
 ```
 
+>**NOTE**: Both python 3.9 and 3.12.8 are requireded respectively for lab2, and lab1-3. I suggest creating different environments
+
 ### 3. Install Dependencies
 
 ```bash
 # Core & Deep Learning
-pip install torch torchvision torchaudio numpy matplotlib tqdm scikit-learn jupyterlab tensorboard
-
-# Lab 2: Reinforcement Learning
-pip install gymnasium[classic_control,box2d] pygame
-
-# Lab 3: Transformers
-pip install transformers datasets evaluate peft accelerate bitsandbytes
+conda install --file requirements.txt -c conda-forge -y
 ```
-*(**Pro-Tip:** For GPU acceleration with PyTorch, visit [pytorch.org](https://pytorch.org) for custom installation commands based on your CUDA version.)*
+
+>**NOTE**: Hope everything is fine couse i had to use different environments due to some lab 2 libraries and also i worked on different machines.
 
 ## 📂 Project Layout
 
@@ -74,7 +71,7 @@ pip install transformers datasets evaluate peft accelerate bitsandbytes
 ## 🚀 Launching the Labs
 
 1.  Activate your virtual environment.
-2.  Start Jupyter: `jupyter lab` or `jupyter notebook`.
+2.  Start Jupyter or use the vs code extention: `jupyter lab` or `jupyter notebook`.
 3.  Open the desired `LabX.ipynb` file and run the cells.
 
     *   **Lab 1:** Expect dataset downloads, model training visuals, and plots.
